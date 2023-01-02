@@ -1,7 +1,7 @@
 # ecowitt_net
 
-This module provides a simple interface to retrieve DEVICE DATA from 
-ecowitt.net, a data hosting service for ECOWITT meteostations.
+This module provides a simple interface to retrieve real-time or historical 
+device data from ecowitt.net, a data hosting service for ECOWITT meteostations.
 
 DEPENDENCIES :
 
