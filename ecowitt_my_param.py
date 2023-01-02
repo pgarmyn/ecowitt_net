@@ -1,7 +1,7 @@
 
 #  your ApplicationKey and ApiKey created in https://www.ecowitt.net/user/index (after login)
 ApplicationKey = 'AB828BC47801AA93BB69DD180F0E0EFE'
-ApiKey = '70e28e08-9a4a-408f-a2ba-008239911c27'
+ApiKey = 'af0fad25-1ded-44d6-995f-ce68674fab09'
 
 # MAC address of corresponding meteostation
 MAC_station = '30:83:98:A6:FF:EE'

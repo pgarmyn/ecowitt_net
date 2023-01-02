@@ -2,7 +2,6 @@ import requests
 from datetime import datetime
 from ecowitt_my_param import *
 
-#Ecowitt documentation  : https://doc.ecowitt.net/web/#/apiv3en?page_id=1
 HTTPS_Ecowitt_REALTIME = f'https://api.ecowitt.net/api/v3/device/real_time?application_key={ApplicationKey}&api_key={ApiKey}&mac={MAC_station}&call_back='
 HTTPS_Ecowitt_HISTORY = f'https://api.ecowitt.net/api/v3/device/history?application_key={ApplicationKey}&api_key={ApiKey}&mac={MAC_station}&call_back='
 
@@ -79,8 +78,8 @@ def ecowitt_get_realtime(call_back: str = 'all', units: str = UnitsEcowitt) -> d
      'call-back', 'units' : see https://doc.ecowitt.net/web/#/apiv3en "Getting Device Real-Time Data"
 
     :rtype: dict
-    :param call_back: 'all' (default) or a selection 'outdoor.temperature,indoor.temperature'
-    :param units: to override UnitsEcowitt
+    :param call_back: optional, can be 'all' (default) or a selection 'outdoor.temperature,indoor.temperature'
+    :param units: optional, overrides 'UnitsEcowitt', see 'UnitsEcowitt'-declaration for syntax
     :return: flatten dict or partial flatten dict
     """
     try:
@@ -99,9 +98,9 @@ def ecowitt_get_history(start_date: datetime, end_date: datetime, call_back: str
 
         :param start_date: start date for retrieving data, sit Ecowitt.net docs for details
         :param end_date: end date for retrieving data, sit Ecowitt.net docs for details
-        :param call_back: 'all' (default) or selection 'outdoor.temperature,indoor.temperature'
-        :param cycle_type: 'auto' (default) or '5min','30min','4hour','1day'; possible values depend on timespan
-        :param units: to override UnitsEcowitt
+        :param call_back: optional, 'all' (= default) or selection 'outdoor.temperature,indoor.temperature'
+        :param cycle_type: optional, 'auto' (= default) or '5min','30min','4hour','1day'; possible values depend on timespan
+        :param units: optional, overrides 'UnitsEcowitt', see 'UnitsEcowitt'-declaration for syntax
         :return: flatten dict or partial flatten dict
         :rtype: dict
         """
