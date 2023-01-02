@@ -1,4 +1,4 @@
-ecowitt_net
+pgarmyn/ecowitt_net
 Copyright (C) 2 January 2023  Piet Garmyn
 
 This program is free software: you can redistribute it and/or modify

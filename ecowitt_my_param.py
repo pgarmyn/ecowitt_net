@@ -1,4 +1,4 @@
-
+#!/usr/bin/python
 #  your ApplicationKey and ApiKey created in https://www.ecowitt.net/user/index (after login)
 ApplicationKey = 'AB828BC47801AA93BB69DD180F0E0EFE'
 ApiKey = 'af0fad25-1ded-44d6-995f-ce68674fab09'

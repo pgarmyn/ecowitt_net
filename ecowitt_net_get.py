@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import requests
 from datetime import datetime
 from ecowitt_my_param import *

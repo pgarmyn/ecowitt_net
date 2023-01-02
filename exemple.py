@@ -1,8 +1,7 @@
+#!/usr/bin/python
 from ecowitt_net_get import ecowitt_get_realtime, ecowitt_get_history
-# import *
 from time import sleep
 from datetime import datetime,timedelta
-
 
 """
   exemple of retrieving personal data from ecowitt.net
